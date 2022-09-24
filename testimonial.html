@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <style>
+        #sec1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        #sec1 .rectangle{
+            width: 33.3%;
+            height: 600px;
+            background-color: beige;
+            border: 2px solid red;
+        }
+        #header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(77, 77, 195);
+    align-items: center;
+    justify-content:safe;
+    display: flex;
+}
+#logo{
+    width: 70px;
+    height: 70px;
+    border: 1px solid red;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: antiquewhite;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: aqua;
+    width: 100%;
+
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.menu{
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown:hover .menu {
+    display: block;
+ }
+ .dropdown:hover .menu {
+    background-color: pink;
+ }
+ .link{
+    display: block;
+    padding: 12px 16px;
+    font-size: large;
+    font-weight: bold;
+ }
+ #footer{
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+
+}
+#sec2{
+    width: 33.3%;
+}
+#sec3{
+    width: 33.3%;
+}
+#sec4{
+    width:33.3%
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="logo"> <img src="./bookmark-heart (1).svg" width="50px"></div>
+        <nav>
+            <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html" target="_blank">About Us</a></li>
+            <li><a href="./testimonial.html" target="_blank">Testimonials</a></li>
+            <div class="dropdown">
+            <li><a href="#">Services</a>
+            <i class="fa fa-caret-down"></i>
+            </li>
+            <div class="menu">
+              <a class="link" href="project.html" target="_blank">Project</a>
+              <a class="link" href="service.html" target="_blank">IT Services</a>
+            </div>
+            </div>
+            <li><a href="#">Contact Us</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for=""></label>
+            <input type="text">
+            <input type="submit" value="Search">
+            </ul>
+        
+        </nav>
+        
+
+    </header>
+    <section id="sec1">
+        <div class="rectangle">
+            <img src="./pic1.jpg" style= "border-radius:50%; width: 200px;padding-left: 150px; padding-right: 150px;padding-top: 10px;">
+            <br>
+            <h1 style="padding-left: 180px; padding: right 150px;">Ruslan K.</h1>
+            <h2 style="padding-left: 100px;">Web Application Developer</h2>
+           <center>5.0/5 (74 jobs)</center>
+           <br>
+           <a href="./tt/web.html">
+           <button style="margin-left: 100px;padding: 15px 32px;">Web Application</button>
+           </a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="./tt/c.html">
+            <button style="padding: 15px 32px;">C#</button>
+           </a>
+           <br>
+           <br>
+           <a href="./tt/nodejs.html">
+            <button style="padding: 15px 32px; margin-left: 50px;">NodeJS</button>
+           </a>
+           &nbsp;&nbsp;
+           <a href="./tt/nodejs.html">
+            <button style="padding: 15px 32px;">Node.JS</button>
+           </a>
+           &nbsp;&nbsp;
+           <a href="./tt/type.html">
+            <button style="padding: 15px 32px;">TypeScript</button>
+           </a>
+           <br>
+           <br>
+           <a href="./tt/see.html">
+            <button style="padding: 10px 20px; background-color:pink;margin-left: 150px; border-radius:5px;font-size:large;cursor:pointer;">See More</button>
+           </a>
+           
+        </div>
+        <div class="rectangle">
+            <img src="./pic4.jpg" style= "border-radius:50%; width: 200px;padding-left: 150px; padding-right: 150px;padding-top: 10px;">
+            <br>
+            <h1 style="padding-left: 180px; padding: right 150px;">Celso M.</h1>
+            <h2 style="padding-left: 100px;">Web Application Developer</h2>
+            <center>4.4/5 (131 jobs)</center>
+            <br>
+           <a href="./tt/web.html">
+           <button style="margin-left: 100px;padding: 15px 32px;">Web Application</button>
+           </a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="./tt/c.html">
+            <button style="padding: 15px 32px;">C#</button>
+           </a>
+           <br>
+           <br>
+           <a href="./tt/nodejs.html">
+            <button style="padding: 15px 32px; margin-left: 50px;">NodeJS</button>
+           </a>
+           &nbsp;&nbsp;
+           <a href="./tt/nodejs.html">
+            <button style="padding: 15px 32px;">Node.JS</button>
+           </a>
+           &nbsp;&nbsp;
+           <a href="./tt/type.html">
+            <button style="padding: 15px 32px;">TypeScript</button>
+           </a>
+           <br>
+           <br>
+           <a href="./tt/see.html">
+            <button style="padding: 10px 20px; background-color:pink;margin-left: 180px; border-radius:5px;font-size:large;cursor:pointer;">See More</button>
+           </a>
+           
+        
+        </div>
+        <div class="rectangle">
+            <img src="./pic3.jpg" style= "border-radius:50%; width: 200px;padding-left: 150px; padding-right: 150px;padding-top: 10px;">
+            <br>
+            <h1 style="padding-left: 200px; padding: right 150px;">Miller</h1>
+            <h2 style="padding-left: 100px;">Web Application Developer</h2>
+            <center>5.0/5 (83 jobs)</center>
+            <br>
+           <a href="./tt/web.html">
+           <button style="margin-left: 100px;padding: 15px 32px;">Web Application</button>
+           </a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="./tt/c.html">
+            <button style="padding: 15px 32px;">C#</button>
+           </a>
+           <br>
+           <br>
+           <a href="./tt/nodejs.html">
+            <button style="padding: 15px 32px; margin-left: 50px;">NodeJS</button>
+           </a>
+           &nbsp;&nbsp;
+           <a href="./tt/nodejs.html">
+            <button style="padding: 15px 32px;">Node.JS</button>
+           </a>
+           &nbsp;&nbsp;
+           <a href="./tt/type.html">
+            <button style="padding: 15px 32px;">TypeScript</button>
+           </a>
+           <br>
+           <br>
+           <a href="./tt/see.html">
+            <button style="padding: 10px 20px; background-color:pink;margin-left: 200px; border-radius:5px;font-size:large;cursor:pointer;">See More</button>
+           </a>
+           
+        </div>
+        </div>
+
+    </section>
+    <div id="footer">
+        <section id="sec2">
+        <h1 style="padding-left: 50px;">The Career Ladder</h1>
+        <p style="padding-left: 50px; font-size: medium;">Our Company is commited to provide</p>
+        <p style="padding-left: 50px; font-size: medium;">timely and step wise carrer guidance which</p>
+        <p style="padding-left: 50px; font-size:medium;">eventually leads to brilliant future of all the students.</p>
+        </section>
+        <section id="sec3">
+          <h1>Important Links</h1>
+          
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </section>
+        <section id="sec4">
+          <h1>Contact Us</h1>
+          <p style="font-size:medium">Flat No. 425,Apartment</p>
+          
+          <p style="font-size:medium ;">Plot No. 35,Sector 6</p>
+          <p style="font-size:medium ;">Dwarka New Delhi 110073</p>
+        </section>
+
+      </div>
+      
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style1.css">
+    <script type="text/javascript">
+        function cap(){
+            var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9'];
+            
+              var a = alpha[Math.floor(Math.random() * 62)];
+              var b = alpha[Math.floor(Math.random() * 62)];
+              var c = alpha[Math.floor(Math.random() * 62)];
+              var d = alpha[Math.floor(Math.random() * 62)];
+              var e = alpha[Math.floor(Math.random() * 62)];
+              var f = alpha[Math.floor(Math.random() * 62)];
+              
+             
+           var sum = a + b + c + d + e + f;
+           document.getElementById("capt").value = sum;
+         }
+         function validcap(){
+             var string1 = document.getElementById('capt').value;
+             var string2 = document.getElementById('textinput').value;
+             if (string1 == string2){
+              
+               return true;
+             }
+             else{ 
+              alert("Invalid Captcha");       
+               return false;
+             }
+         }
+         
+    </script>
+</head>
+<body onload="cap();">
+    <header id="header">
+        <div id="logo"> <img src="./bookmark-heart (1).svg" width="50px"></div>
+        <nav>
+            <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html" target="_blank">About Us</a></li>
+            <li><a href="./testimonial.html" target="_blank">Testimonials</a></li>
+            <div class="dropdown">
+            <li><a href="#">Services</a>
+            <i class="fa fa-caret-down"></i>
+            </li>
+            <div class="menu">
+              <a class="link" href="project.html" target="_blank">Project</a>
+              <a class="link" href="service.html" target="_blank">IT Services</a>
+            </div>
+            </div>
+            <li><a href="#">Contact Us</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;
+            <label for=""></label>
+            <input type="text" style="width: 150px; padding:2px;">
+            <input type="submit" value="Search" style="width: 100px; padding:2px;">
+            &nbsp;&nbsp;
+            <a href="./signup.html" style="font-weight:bold;color:black;font-size:large;">Sign Up</a>
+            <b style="font-size: large;">/</b>
+            <a href="./login.html" style="font-weight:bold;color:black; font-size: large;">Login</a>
+            </ul>
+        
+        </nav>
+        
+
+    </header>
+    <div id="ccc">
+    
+      <div class="form">
+        <h1 style="text-align: center;">Login Form</h1>
+        <hr>
+      <form>
+       Username : &nbsp;&nbsp;<input type="text" size="30">
+       <br><br>
+       Password : &nbsp;&nbsp;<input type="password" size="30">
+       <br>
+       <br>
+       <div class="contain">
+          <input type="text" id="capt" readonly="readonly">
+          <div id="refresh">
+              <img src="./refresh.jpg" width="50px" onclick="cap()">
+          </div>
+          <input type="text" id="textinput" placeholder="captcha...">
+       </div>
+       <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" onclick="validcap()" value="Submit" >
+       &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="reset" value="Reset">
+      </form>
+      </div>
+      </div>
+    
+    
+    <div id="footer">
+        <section id="sec2">
+        <h1 style="padding-left: 50px;">The Career Ladder</h1>
+        <p style="padding-left: 50px; font-size: medium;">Our Company is commited to provide</p>
+        <p style="padding-left: 50px; font-size: medium;">timely and step wise carrer guidance which</p>
+        <p style="padding-left: 50px; font-size:medium;">eventually leads to brilliant future of all the students.</p>
+        </section>
+        <section id="sec3">
+          <h1>Important Links</h1>
+          
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </section>
+        <section id="sec4">
+          <h1>Contact Us</h1>
+          <p style="font-size:medium">Flat No. 425,Apartment</p>
+          
+          <p style="font-size:medium ;">Plot No. 35,Sector 6</p>
+          <p style="font-size:medium ;">Dwarka New Delhi 110073</p>
+        </section>
+
+      </div>
+</body>
+</html>
